@@ -479,7 +479,7 @@ cd $WORK_DIRECTORY >> $LOG_FILE 2>&1
 displayResult $?
 
 displayMessage "Installing Asterisk"
-yum -y install asterisk16 asterisk16-configs dahdi-linux dahdi-tools libpri >> $LOG_FILE 2>&1
+yum --skip-broken install asterisk16 asterisk16-configs dahdi-linux dahdi-tools libpri >> $LOG_FILE 2>&1
 displayResult $?
 
 displayMessage "Changing $ASTERISK_CONFIG_DIRECTORY/sip.conf file format from DOS to Unix"
