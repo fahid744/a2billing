@@ -31,8 +31,9 @@ screen
 
 And then execute the script:
 
-chmod +x a2billing_setup.sh
-./a2billing_setup.sh
+chmod +x A2B.sh
+
+./A2B.sh
 
     Status
     API
