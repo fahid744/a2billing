@@ -232,6 +232,11 @@ do
 	echo " - $package"
 done
 
+displayMessage "UnInstalling additional packages"
+yum -y remove $ADDITIONAL_PACKAGES >> $LOG_FILE 2>&1
+displayResult $?
+
+
 displayMessage "Installing additional packages"
 yum -y install $ADDITIONAL_PACKAGES >> $LOG_FILE 2>&1
 displayResult $?
