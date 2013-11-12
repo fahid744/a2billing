@@ -457,7 +457,7 @@ cd $WORK_DIRECTORY >> $LOG_FILE 2>&1
 displayResult $?
 
 displayMessage "Downloading OpenR2 Library version $LIBOPENR2_VERSION"
-wget -t 3 http://andresmontalban.com/a2billing/libopenr2-$LIBOPENR2_VERSION.$ARCH.rpm >> $LOG_FILE 2>&1
+wget -t 3 http://repo.elastix.org/elastix/2.0/updates/i386/RPMS/libopenr2-$LIBOPENR2_VERSION.$ARCH.rpm >> $LOG_FILE 2>&1
 displayResult $?
 
 displayMessage "Installing OpenR2 Library version $LIBOPENR2_VERSION"
